@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ashley</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <link rel="stylesheet" href="css/ashley.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/ashley.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div id="headerWrap">
+                <h1><a href="#">애슐리</a></h1>
+                <nav id="lnb">
+                    <h2 class="hidden">애슐리 딸기시즌 이용메뉴</h2>
+                    <ul>
+                        <li><a href="#section1">home</a></li>
+                        <li><a href="#section2">menu</a></li>
+                        <li><a href="#section3">event</a></li>
+                        <li><a href="#section4">notice</a></li>
+                    </ul>
+                </nav>
+                <nav id="gnb">
+                    <h2 class="hidden">애슐리 회원메뉴</h2>
+                    <ul>
+                        <li class="line"><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>   
+        <section id="section1">
+            <h2 class="hidden">애슐리 딸기 축제</h2>
+            <div id="name">
+                <h3>다시 돌아온 생딸기 시리즈
+                    <p><span>애슐리</span>딸기축제</p>
+                </h3>
+            </div>
+            <div id="dessertimg"></div>
+        </section>
+        <section id="section2">
+            <h2 class="hidden">애슐리 딸기 축제 메뉴 소개</h2>
+            <div id= "t1" class="title">
+                <h3>ashley <span>strawberry</span></h3>
+                <p>
+                    상큼하게 <span>꽉</span> 채우다, 애슐리 딸기 디저트<br>
+                    다시 돌아온 생딸기 디저트를 가까운 <span>애슐리 매장</span>에서 만나보세요!
+                </p>
+            </div>
+            
+            <svg width="350" height="350">
+                <rect width="350" height="350" />
+            </svg>
+            
+            <div id="menulist">
+                <a onclick="viewLayer('menupage1', evnet);" id="menu1" class="left">
+                    <dl class="menuimg">
+                        <dt>마이 리얼 베리 케이크</dt>
+                        <dd>real strawberry cream cake</dd>
+                        <dd class="box"><img src="image/menu1.png" alt="마이 리얼 베리 케이크"></dd>
+                    </dl>
+                </a>
+                <a id="menu2" class="left">
+                    <dl class="menuimg">
+                        <dt>한입 딸기 슈</dt>
+                        <dd>strawberry cream chou</dd>
+                        <dd class="box"><img src="image/menu2.png" alt="한입 딸기 슈"></dd>
+                    </dl>
+                </a>
+                <a id="menu3">
+                    <dl class="menuimg">
+                        <dt>스트로베리 와플</dt>
+                        <dd>strawberry waffle</dd>
+                        <dd class="box"><img src="image/menu3.png" alt="스트로베리 와플"></dd>
+                    </dl>
+                </a>
+                <a id="menu4" class="left">
+                    <dl class="menuimg">
+                        <dt>베리 롤링 케이크</dt>
+                        <dd>strawberry roll cake</dd>
+                        <dd class="box"><img src="image/menu4.png" alt="베리 롤링 케이크"></dd>
+                    </dl>
+                </a>
+                <a id="menu5" class="left">
+                    <dl class="menuimg">
+                        <dt>스트로베리 초코푸딩</dt>
+                        <dd>strawberry chocolate pudding</dd>
+                        <dd class="box"><img src="image/menu5.png" alt="스트로베리 초코푸딩"></dd>
+                    </dl>
+                </a>
+                <a id="menu6">
+                    <dl class="menuimg">
+                        <dt>새콤달콤 딸기 빙수</dt>
+                        <dd>ice flakes with strawberry syrup</dd>
+                        <dd class="box"><img src="image/menu6.png" alt="새콤달콤 딸기 빙수"></dd>
+                    </dl>
+                </a>
+                <a id="menu7" class="left">
+                    <dl class="menuimg">
+                        <dt>땡큐 베리 젤리</dt>
+                        <dd>strawberry jelly</dd>
+                        <dd class="box"><img src="image/menu7.png" alt="땡큐 베리 젤리"></dd>
+                    </dl>
+                </a>
+                <a id="menu8" class="left">
+                    <dl class="menuimg">
+                        <dt>딸기 녹차 마운틴</dt>
+                        <dd>strawberry greentea moutain</dd>
+                        <dd class="box"><img src="image/menu8.png" alt="딸기 녹차 마운틴"></dd>
+                    </dl>
+                </a>
+                <a id="menu9">
+                    <dl class="menuimg">
+                        <dt>딸기 녹차 티라미수</dt>
+                        <dd>strawberry greentea tiramisu</dd>
+                        <dd class="box"><img src="image/menu9.png" alt="딸기 녹차 티라미수"></dd>
+                    </dl>
+                </a>
+            </div>
+            <div id="menupage1" class="popup">
+                <div id="close">
+                    <a onclick="closeLayer('menupage1');">
+                        <img src="image/X.png">
+                    </a>
+                </div>
+                <img src="image/popup1.png">
+            </div>
+            <div id="ballon1" class="ani"></div>
+            <div id="ballon2" class="ani"></div>
+            <div id="confetti" class="ani"></div>
+        </section>
+        <section id="section3">
+            <h2 class="hidden">애슐리 딸기 축제 이벤트 소개</h2>
+            <div id="t2" class="title">
+                <h3>ashley <span>gift</span></h3>
+                <p>
+                    <span>애슐리가</span> 준비한 선물<br>
+                    참여만 해도 <span>빵빵</span> 터지는 혜택!
+                </p>
+            </div>
+            <div id="event">
+                <div id="event1" class="eventWrap">
+                    <div id="circle1" class="circle">
+                        <img src="image/event1-2.png">
+                    </div>
+                    <h4>시즌 <span class="color1">신메뉴</span> 맛보고<br><span class="color2">제주도</span> 여행가자!</h4>
+                    <dl>
+                        <dt class="hidden">응모기간</dt>
+                        <dd class="date">2019.02.27 - 2019.03.31</dd>
+                    </dl>
+                    <dl>
+                        <dt class="hidden">응모방법</dt>
+                        <dd class="ex">
+                            <img src="image/check.png">
+                            <p>애슐리 신메뉴 <span class="color1">인증샷</span>을 찍는다!</p></dd>
+                        <dd class="ex">
+                            <img src="image/check.png">
+                            <p><span class="color1">#애슐리신메뉴</span> 해시태그와 함께<br>인스타그램 게시글로 올리면 완료!</p>
+                        </dd>
+                    </dl>
+                    <a href="http://www.myashley.co.kr/Customer/NoticeView.aspx?NoticeSeq=889&SearchText=%ec%8b%a0%eb%a9%94%eb%89%b4&NowPage=3&=SearchOptionTitle" target="_blank">이벤트 보러가기</a>
+                </div>
+                <div id="event2" class="eventWrap">
+                    <div id="circle2" class="circle">
+                        <img src="image/event2-2.png">
+                    </div>
+                    <h4><span class="color1">교복</span> 입고 애슐리 오면<br>하루종일 <span class="color1">런치</span> 가격!</h4>
+                    <dl>
+                        <dt class="hidden">응모기간</dt>
+                        <dd class="date">2019.02.01 - 2019.03.01</dd>
+                    </dl>
+                    <dl id="sale">
+                        <dt class="hidden">할인가격</dt>
+                        <dd id="price1">19,900<img src="image/arrow.png"><span id="price2">13,900</span></dd>
+
+                    </dl>
+                    <a href="http://www.myashley.co.kr/Customer/NoticeView.aspx?NoticeSeq=931&SearchText=%ea%b5%90%eb%b3%b5&NowPage=1&=SearchOptionTitle" target="_blank">이벤트 보러가기</a>
+                </div>
+            </div>
+        </section>
+        <section id="section4">
+            <h2 class="hidden">애슐리 공지 안내</h2>
+            <div id="t4" class="title">
+                <h3>ashley <span>news</span></h3>
+                <p>애슐리의 <span>소식을</span> 빠르게 알려드립니다</p>
+            </div>
+            <div id="news">
+                <div id="news1">
+                    <div class="newsbox">
+                        <div><p>안내</p></div>
+                        <p><a href="http://www.myashley.co.kr/Customer/NoticeView.aspx?NoticeSeq=956&SearchText=&NowPage=1&=SearchOption" target="_blank">2019년 8월 30일(금) 애슐리w 롯데몰 수지점 open!<br><span class="data">2019-08-21</span></a></p>
+                    </div>
+                </div>
+                <div id="news2">
+                    <div class="newsbox">
+                        <div class="color3"><p>신메뉴</p></div>
+                        <p><a href="http://www.myashley.co.kr/Customer/NoticeView.aspx?NoticeSeq=954&SearchText=&NowPage=1&=SearchOption" target="_blank">애슐리w, 퀸즈에서 10년동안 가장 많이 사랑받은 메뉴를 만나보세요!<br><span class="data">2019-08-14</span></a></p>
+                    </div>
+                </div>
+                <div id="news3">
+                    <div class="newsbox">
+                        <div><p>안내</p></div>
+                        <p><a href="http://www.myashley.co.kr/Customer/NoticeView.aspx?NoticeSeq=952&SearchText=&NowPage=1&=SearchOption" target="_blank">애슐리 8월 정기휴무 일정안내<br><span class="data">2019-08-01</span></a></p>
+                    </div>
+                </div>
+                <div id="news4">
+                    <div class="newsbox">
+                        <div><p>안내</p></div>
+                        <p><a href="http://www.myashley.co.kr/Customer/NoticeView.aspx?NoticeSeq=950&SearchText=&NowPage=1&=SearchOption" target="_blank">신메뉴 소비자 조사 참여 포인트 적립 당첨자 안내 (1,000 포인트)<br><span class="data">2019-07-29</span></a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section5">
+            <h2 class="hidden">애슐리 타입 안내</h2>
+            <div id="t5" class="title">
+                <h3>ashley <span>type</span></h3>
+                <p>애슐리만의 다양한 <span>맛</span>과 <span>분위기</span>를 즐겨보세요</p>
+            </div>
+            <div id="typeWrap">
+                <div class="type classic">
+                    <a href="http://www.myashley.co.kr/Type/Classic.aspx" target="_blank">
+                            <p>ashley classic<br>
+                            <span class="span">>> 자세히 보기</span></p>
+                    </a>
+                </div>
+                <div class="type grill">
+                    <a href="http://www.myashley.co.kr/Type/83Grill.aspx" target="_blank">
+                            <p>ashley 83grill<br>
+                            <span class="span">>> 자세히 보기</span></p>
+                    </a>
+                </div>
+                <div class="type w">
+                    <a href="http://www.myashley.co.kr/Type/WPremium.aspx" target="_blank">
+                            <p>ashley w<br>
+                            <span class="span">>> 자세히 보기</span></p>
+                    </a>
+                </div>
+                <div class="type queens">
+                    <a href="http://www.myashley.co.kr/Type/WPlus.aspx" target="_blank">
+                            <p>ashley queens<br>
+                            <span class="span">>> 자세히 보기</span></p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div id="ftlogo"></div>
+            <p>(주) 이랜드파크 &nbsp;&nbsp; | &nbsp;&nbsp; 서울 강남구 압구정로 152 극동스포츠센터 지하 1층<br>
+            대표이사 : 김현수 &nbsp;&nbsp; | &nbsp;&nbsp; 개인정보보호 책임자 : 김현수 &nbsp;&nbsp; | &nbsp;&nbsp; 대표전화 : 1577-1259 &nbsp;&nbsp; | &nbsp;&nbsp; 이 메일 : elandfood@eland.co.kr</p>
+            <small>Copyright©2019 ASHLEY</small>
+        </footer>
+    </div>
+</body>
+</html>
